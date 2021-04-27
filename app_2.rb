@@ -11,7 +11,7 @@ puts "• Le but du jeu est d'être le dernier survivant ! •"
 puts "———————————————————————————————————————————————————"
 puts ""
 
-puts "Choisi ton pseudo :"
+puts "Choisi ton pseudo :" #initialisation d'un joueur humain
 print "• "
 user_name = gets.chomp
 
@@ -20,7 +20,7 @@ puts ""
 
 user = HumanPlayer.new(user_name)
 
-players_arr = [player1 = Player.new("Josiane"), player2 = Player.new("José")]
+players_arr = [player1 = Player.new("Josiane"), player2 = Player.new("José")] #initialisation des ennemies
 
 while user.life_points > 0 && (player1.life_points > 0 || player2.life_points > 0)
 
@@ -86,7 +86,7 @@ while user.life_points > 0 && (player1.life_points > 0 || player2.life_points > 
   puts ""
   puts ""
 
-  if player1.life_points > 0 && player2.life_points > 0
+  if player1.life_points > 0 && player2.life_points > 0 #les ennemies attaquent qui s'ils ont encore de la vie
     puts "Les autres joueurs t'attaquent !"
   end
 
