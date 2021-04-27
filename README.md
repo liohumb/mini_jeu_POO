@@ -8,15 +8,21 @@ Très simple !
 Sur ton terminal, tu peux lancer :  
 
 Le premier programme :  
+
 `ruby app.rb`  
 
+
 Le deuxième programme :  
+
 `ruby app_2.rb`
 
+
 Le troisième et dernier programme :  
+
 `ruby app_3.rb`  
 
-    
+  
+
 ## Comment quitter ?
 
 Tu veux quitter avant la fin ?  
