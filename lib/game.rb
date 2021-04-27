@@ -79,4 +79,31 @@ class Game
       kill_player
   end
 
+  def enemies_attack
+
+    puts ""
+    puts "•             Les ennemies attaquent !            •"
+    puts ""
+
+    @ennemies.each {
+      |player| player.attacks(@humanplayer)
+    }
+
+  end
+
+  def end
+
+    puts ""
+    puts ""
+    puts "———————————————————————————————————————————————————"
+    puts "•                    GAME OVER                    •"
+    puts "———————————————————————————————————————————————————"
+    puts ""
+    puts ""
+
+    puts "Le jeu est fini !"
+    ennemies{|ennemi| ennemi.life_points <= 0} (puts "Bravo ! Tu as gagné !") : (puts "Loser ! Tu as perdu !")
+
+  end
+
 end
