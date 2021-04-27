@@ -50,4 +50,8 @@ class HumanPlayer < Player
     puts "#{@name} a #{@life_points} points de vie et une arme de niveau #{@weapon_level}"
   end
 
+  def compute_damage
+    rand(1..6) * @weapon_level
+  end
+
 end
