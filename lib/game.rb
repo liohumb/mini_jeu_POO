@@ -13,6 +13,16 @@ class Game
     @ennemies = [@player_1, @player_2, @player_3, @player_4]
   end
 
+  def kill_player
+    @ennemies.each {
+      |player|
+        if (player.life_points <= 0)
+          @ennemies.delete(player)
+          puts "#{player.name} vient d'être éliminé !"
+        end
+      }
+  end
+
   
 
 end
