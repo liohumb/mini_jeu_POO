@@ -9,6 +9,8 @@ player2 = Player.new("José")
 
 while player1.life_points > 0 && player2.life_points > 0
 
+  puts ""
+  puts ""
   puts "Voici l'état de chaque joueur :"
   print player1.show_state
   print player2.show_state
