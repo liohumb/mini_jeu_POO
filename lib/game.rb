@@ -15,4 +15,12 @@ class Game
     end
   end
 
+  def is_still_gongoring?
+    if @human_player.life_points > 0 && !@enemies.empty?
+      return true
+    else
+      return false
+    end
+  end
+
 end
