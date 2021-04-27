@@ -22,11 +22,11 @@ Sur ton terminal, tu peux lancer :
 `ruby app_3.rb`  
 
 
-  
+
 ## Comment quitter ?
 
 Tu veux quitter avant la fin ?  
-Pas de soucis ! Il te suffit de faire CTRL + C  
+Pas de soucis ! Il te suffit de faire  > CTRL + C <    
 
 
 A bientôt ! :)
