@@ -23,6 +23,12 @@ class Game
       }
   end
 
-  
+  def is_still_ongoing?
+    if @humanplayer.life_points > 0 && (@player_1.life_points > 0 || @player_2.life_points > 0 || @player_3.life_points > 0 || @player_4.life_points > 0)
+      return true
+    else
+      return false
+    end
+  end
 
 end
