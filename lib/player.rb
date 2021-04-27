@@ -46,4 +46,8 @@ class HumanPlayer < Player
     @life_points = 100
   end
 
+  def show_state
+    puts "#{@name} a #{@life_points} points de vie et une arme de niveau #{@weapon_level}"
+  end
+
 end
