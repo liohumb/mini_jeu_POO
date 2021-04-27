@@ -1,17 +1,17 @@
 class Player
 
-  attr_accessor :name, :life_points
+  attr_accessor :name, :life_points #la variable d'instance qui permet de lire et de modifier
 
-  def initialize(name)
+  def initialize(name) #la methode qui initialise un joueur
     @name = name
     @life_points = 10
   end
 
-  def show_state
+  def show_state #la methode qui montre l'état du joueur
     puts "#{@name} a #{@life_points} points de vie."
   end
 
-  def gets_damage(damage)
+  def gets_damage(damage) #la methode qui stock les points de vie
 
     @life_points -= damage
 
@@ -21,7 +21,7 @@ class Player
 
   end
 
-  def attacks(other_player)
+  def attacks(other_player) #la methode qui lance une attaque et qui annonce les dégats
 
     puts "Le joueur #{@name} attaque le joueur #{other_player.name}."
     other_player_damage = compute_damage
@@ -31,13 +31,13 @@ class Player
 
   end
 
-  def compute_damage
+  def compute_damage #la methode qui donne des points de dommage aléatoire
     return rand(1..6)
   end
 
 end
 
-class HumanPlayer < Player
+class HumanPlayer < Player #la classe HumanPlayer qui hérite de Player
 
   attr_accessor :weapon_level
 
@@ -46,7 +46,7 @@ class HumanPlayer < Player
     @life_points = 100
   end
 
-  def show_state
+  def show_state #la methode qui affiche les informations joueur
     puts "#{@name} a #{@life_points} points de vie et une arme de niveau #{@weapon_level}"
   end
 
@@ -54,7 +54,7 @@ class HumanPlayer < Player
     rand(1..6) * @weapon_level
   end
 
-  def search_weapon
+  def search_weapon #la methode pour acquérir une nouvelle arme
 
     new_weapon_level = rand(1..6)
     puts "Tu as trouvé une arme de niveau #{new_weapon_level}"
@@ -68,7 +68,7 @@ class HumanPlayer < Player
 
   end
 
-  def search_health_pack
+  def search_health_pack #la methode pour acquérir un pack de santé
 
     health_pack = rand(1..6)
 
