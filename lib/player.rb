@@ -54,4 +54,18 @@ class HumanPlayer < Player
     rand(1..6) * @weapon_level
   end
 
+  def search_weapon
+
+    new_weapon_level = rand(1..6)
+    puts "Tu as trouvé une arme de niveau #{new_weapon_level}"
+
+    if new_weapon_level > @weapon_level
+      @weapon_level = new_weapon_level
+      puts "Youhou ! Elle est meilleur que ton arme actuelle : tu la prends."
+    elsif new_weapon_level <= @weapon_level
+      puts "M@*#$..! Elle n'est pas mieux que ton arme actuelle..."
+    end
+
+  end
+
 end
