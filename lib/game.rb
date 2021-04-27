@@ -5,9 +5,9 @@ class Game
   def initialize(humanplayer)
     @humanplayer = HumanPlayer.new("#{humanplayer}")
     @player_1 = Player.new("Leonardo")
-    @player_2 = PLayer.new("Donatello")
+    @player_2 = Player.new("Donatello")
     @player_3 = Player.new("Michelangelo")
-    @player_4 = PLayer.new("Raphaëlo")
+    @player_4 = Player.new("Raphaëlo")
     @player_left = 10
     @enemies_in_sight =[]
     @ennemies = [@player_1, @player_2, @player_3, @player_4]
@@ -102,7 +102,7 @@ class Game
     puts ""
 
     puts "Le jeu est fini !"
-    ennemies{|ennemi| ennemi.life_points <= 0} (puts "Bravo ! Tu as gagné !") : (puts "Loser ! Tu as perdu !")
+    ennemies{|ennemi| ennemi.life_points <= 0} ? (puts "•              Bravo ! Tu as gagné !              •") : (puts "•              Loser ! Tu as perdu !              •")
 
   end
 
