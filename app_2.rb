@@ -24,12 +24,12 @@ players_arr = [player1 = Player.new("Josiane"), player2 = Player.new("José")] #
 
 while user.life_points > 0 && (player1.life_points > 0 || player2.life_points > 0)
 
-  puts ""
-  puts ""
-
   puts "OK ! #{user_name}, ton état est :"
   puts user.show_state
   puts "Je te montre aussi les états des méchants :"
+
+  puts ""
+
   puts player1.show_state
   puts player2.show_state
 
