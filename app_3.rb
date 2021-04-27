@@ -16,7 +16,6 @@ print "• "
 user_name = gets.chomp
 
 puts ""
-puts ""
 
 my_game = Game.new(user_name)
 
@@ -28,5 +27,6 @@ while my_game.is_still_ongoing? == true do
   puts ""
   my_game.menu_choice(action)
   my_game.enemies_attack
-  my_game.end
 end
+
+my_game.end
