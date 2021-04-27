@@ -36,3 +36,9 @@ class Player
   end
 
 end
+
+class HumanPlayer < Player
+
+  attr_accessor :weapon_level
+
+end
