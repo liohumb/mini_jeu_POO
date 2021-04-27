@@ -57,7 +57,26 @@ class Game
         puts "#{command} — #{player.name} a #{player.life_points} vie"
       command += 1
     }
-    
+
+  end
+
+  def menu_choice(action)
+    if action == "a"
+      @humanplayer.search_weapon
+    elsif action == "s"
+      @humanplayer.search_health_pack
+    elsif action == "1"
+      @humanplayer.attacks(@player_1)
+    elsif action == "2"
+      @humanplayer.attacks(@player_2)
+    elsif action == "3"
+      @humanplayer.attacks(@player_3)
+    elsif action == "4"
+      @humanplayer.attacks(@player_4)
+    else
+      puts "Tu as le choix entre a, s, 1, 2, 3 ou 4. Recommence !"
+    end
+      kill_player
   end
 
 end
