@@ -4,7 +4,7 @@ Bundler.require
 require_relative 'lib/game'
 require_relative 'lib/player'
 
-player1 = Player.new("Josiane")
+player1 = Player.new("Josiane") #initialisation des joueurs
 player2 = Player.new("José")
 
 while player1.life_points > 0 && player2.life_points > 0
@@ -22,6 +22,7 @@ while player1.life_points > 0 && player2.life_points > 0
     puts "Contre attaque de #{player2.name} !"
     puts player2.attacks(player1)
   end
-  
+
 end
+
 #binding.pry
