@@ -26,7 +26,7 @@ Sur ton terminal, tu peux lancer :
 ## Comment quitter ?
 
 Tu veux quitter avant la fin ?  
-Pas de soucis ! Il te suffit de faire  > CTRL + C <    
+Pas de soucis ! Il te suffit de faire  •> " CTRL + C " <•    
 
 
 A bientôt ! :)
