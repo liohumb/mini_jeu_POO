@@ -6,18 +6,17 @@ Projet validant THP — semaine 4 / jour 2
 
 Très simple !  
 Sur ton terminal, tu peux lancer :  
-```
-ruby app.rb
-```
 
-```
-ruby app_2.rb
-```
+Le premier programme :  
+`ruby app.rb`  
 
-```
-ruby app_3.rb
-```
+Le deuxième programme :  
+`ruby app_2.rb`
 
+Le troisième et dernier programme :  
+`ruby app_3.rb`  
+
+    
 ## Comment quitter ?
 
 Tu veux quitter avant la fin ?  
