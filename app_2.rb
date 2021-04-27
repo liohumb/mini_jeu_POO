@@ -17,3 +17,5 @@ user_name = gets.chomp
 puts ""
 puts ""
 user = HumanPlayer.new(user_name)
+
+players_arr = [player1 = Player.new("Josiane"), player2 = Player.new("José")]
