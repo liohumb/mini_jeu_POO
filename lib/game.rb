@@ -101,8 +101,14 @@ class Game
     puts ""
     puts ""
 
-    puts "Le jeu est fini !"
-    ennemies{|ennemi| ennemi.life_points <= 0} ? (puts "•              Bravo ! Tu as gagné !              •") : (puts "•              Loser ! Tu as perdu !              •")
+    if @humanplayer.life_points > 0
+      puts "•               BRAVO TU AS GAGNÉ !               •"
+    else
+      puts "•            M@*#$..! TU AS PERDU ! :(            •"
+    end
+
+    puts ""
+    puts ""
 
   end
 
