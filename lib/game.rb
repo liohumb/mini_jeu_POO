@@ -31,4 +31,12 @@ class Game
     end
   end
 
+  def show_players
+    puts ""
+    puts "———————————————————————————————————————————————————"
+    puts "•        Il reste #{@ennemies.size} méchant       •"
+    puts "———————————————————————————————————————————————————"
+    puts ""
+  end
+
 end
