@@ -23,4 +23,11 @@ class Game
     end
   end
 
+  def show_players
+    puts "Voici ton état :"
+    puts @human_player.show_state
+    puts ""
+    puts "Voici le nombre d'ennemiers restant : #{enemies.count}"
+  end
+  
 end
