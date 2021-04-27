@@ -2,7 +2,7 @@ class Game
 
   attr_accessor :humanplayer, :ennemies
 
-  def initialize(humanplayer)
+  def initialize(humanplayer) #la methode de création d'un joueur et des ennemis
     @humanplayer = HumanPlayer.new("#{humanplayer}")
     @player_1 = Player.new("Leonardo")
     @player_2 = Player.new("Donatello")
@@ -13,7 +13,7 @@ class Game
     @ennemies = [@player_1, @player_2, @player_3, @player_4]
   end
 
-  def kill_player
+  def kill_player #la methode qui permet de supprimer un ennemis tué
     @ennemies.each {
       |player|
         if (player.life_points <= 0)
@@ -23,7 +23,7 @@ class Game
       }
   end
 
-  def is_still_ongoing?
+  def is_still_ongoing? #la methode qui verifie si le joueur et les ennemis sont toujours vivant
     if @humanplayer.life_points > 0 && (@player_1.life_points > 0 || @player_2.life_points > 0 || @player_3.life_points > 0 || @player_4.life_points > 0)
       return true
     else
@@ -31,7 +31,7 @@ class Game
     end
   end
 
-  def show_players
+  def show_players #la methode qui l'état du joueurs et des ennemis
     puts ""
     puts "———————————————————————————————————————————————————"
     puts "•        Il reste #{@ennemies.size} méchant       •"
@@ -39,7 +39,7 @@ class Game
     puts ""
   end
 
-  def menu
+  def menu #la methode qui affiche le menu
 
     command = 1
 
@@ -60,7 +60,7 @@ class Game
 
   end
 
-  def menu_choice(action)
+  def menu_choice(action) #la methode qui demande à faire un choix
     if action == "a"
       @humanplayer.search_weapon
     elsif action == "s"
@@ -79,7 +79,7 @@ class Game
       kill_player
   end
 
-  def enemies_attack
+  def enemies_attack #la methode qui fait riposter les ennemis vivants
 
     puts ""
     puts "•             Les ennemies attaquent !            •"
@@ -91,7 +91,7 @@ class Game
 
   end
 
-  def end
+  def end #la methode qui va effectuer l'affichage de fin de jeu
 
     puts ""
     puts ""
