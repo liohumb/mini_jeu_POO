@@ -98,3 +98,20 @@ while user.life_points > 0 && (player1.life_points > 0 || player2.life_points > 
   end
 
 end
+
+puts ""
+puts ""
+puts "———————————————————————————————————————————————————"
+puts "•                    GAME OVER                    •"
+puts "———————————————————————————————————————————————————"
+puts ""
+puts ""
+
+  if user.life_points > 0
+    puts "•               BRAVO TU AS GAGNÉ !               •"
+  else
+    puts "•            M@*#$..! TU AS PERDU ! :(            •"
+  end
+
+puts ""
+puts ""
