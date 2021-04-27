@@ -73,7 +73,16 @@ class HumanPlayer < Player
     health_pack = rand(1..6)
 
     if health_pack == 1
-        puts "Tu n'as rien trouvé..."
+      puts "Tu n'as rien trouvé !"
+
+      elsif health_pack == 6
+        if @life_points >= 20
+           @life_points = 100
+        else
+           @life_points + 80
+      end
+        puts "Wahouuu, tu as trouvé un pack de +80 points de vie !"
+
       else
         if @life_points >= 50
            @life_points = 100
@@ -81,14 +90,6 @@ class HumanPlayer < Player
            @life_points + 50
         end
         puts "Bravo, tu as trouvé un pack de +50 points de vie !"
-
-      elsif health_pack == 6
-        if @life_points >= 20
-           @life_points = 100
-        else
-           @life_points + 80
-        end
-        puts "Waow, tu as trouvé un pack +80 points de vie !"
       end
     end
 
