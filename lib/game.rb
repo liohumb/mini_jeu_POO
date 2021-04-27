@@ -39,4 +39,25 @@ class Game
     puts ""
   end
 
+  def menu
+
+    command = 1
+
+    puts ""
+    puts ""
+    puts "a — tu pars à la recherche d'une arme"
+    puts "s — tu pars à la recherche d'un pack de soin"
+    puts ""
+    puts ""
+    puts "Si tu veux faire une attaque !"
+    puts ""
+
+    @ennemies.each {
+      |player|
+        puts "#{command} — #{player.name} a #{player.life_points} vie"
+      command += 1
+    }
+    
+  end
+
 end
